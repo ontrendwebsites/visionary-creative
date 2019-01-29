@@ -1,0 +1,31 @@
+@mixin transition($args) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+// a {
+// 	color: gray;
+// 	@include transition(color .3s ease);
+// 	&:hover {
+// 	color: black;
+// 	}
+// }
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+
+
+@mixin rotate($degrees) {
+	-webkit-transform: rotate($degrees);
+	-moz-transform: rotate($degrees);
+	-ms-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	transform: rotate($degrees);
+}
