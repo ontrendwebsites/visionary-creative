@@ -289,12 +289,88 @@ html body {
 // home container
 .home {
 
+    // header width
+    .navigation-top .wrap {
+        max-width: 940px;
+        padding: .75em 20px .75em 0;
+    }
+
     #content {
 
         .container {
             width: 100%;
-            max-width: 940px;
+            max-width: 970px;
+            position: relative;
+
+            .masonry {
+                max-width: 940px;
+                margin: auto;
+            }
         }
+    }
+}
+
+// home profile
+.home-profile {
+    position: absolute;
+    left: -300px;
+    top: -19px;
+    max-width: 300px;
+    text-align: center;
+    transition: all .2s ease-out;
+
+    h5,
+    p {
+        color: $black;
+        font-weight: 100;
+    }
+
+    h5 {
+        margin: .25em;
+        padding: 0;
+        text-transform: none;
+        font-size: 1.5em;
+        letter-spacing: .02em;
+    }
+
+    p {
+        line-height: 140%;
+    }
+}
+
+// responsive home
+@media (max-width: 970px) {
+    .home {
+
+        // header width
+        .navigation-top .wrap {
+            max-width: 940px;
+            padding: .75em 1em;
+        }
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .home-profile {
+        max-width: 200px;
+        left: -200px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .home-profile {
+        max-width: 150px;
+        left: -140px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .home-profile {
+        position: relative;
+        max-width: none;
+        left: 0;
+        margin: auto;
     }
 }
 
