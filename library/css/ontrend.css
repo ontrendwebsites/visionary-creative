@@ -257,7 +257,8 @@ html body {
         transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 0); }
 #content #primary.full-width {
   width: 100%;
-  float: none; }
+  float: none;
+  max-width: none; }
   #content #primary.full-width .entry-content .hidden-content {
     display: none; }
 #content .nav-links .nav-title-icon-wrapper {
