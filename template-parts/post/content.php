@@ -34,7 +34,7 @@
 
 	
 
-	<div class="entry-content">
+	<div class="entry-content folio-post">
 		<div class="hidden-content">
 			<?php
 				/* translators: %s: Name of current post */
