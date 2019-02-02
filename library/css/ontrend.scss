@@ -438,9 +438,10 @@ html body {
 .folio-post {
 
     hr {
-        margin: 16px 0;
-        padding: 16px 0;
+        margin: 32px 0;
+        border: none;
         border-bottom: 1px solid rgba(0,0,0,0.2);
+        background: none;
     }
 }
 
@@ -559,7 +560,7 @@ body {
 @media all and (min-width: 450px) and (max-width: 768px) {
     .home #content .container  {
         padding: 0 1em;
-        
+
         .masonry {
             text-align: center
         }
@@ -851,9 +852,6 @@ body {
         padding: 0;
     }
 }
-
-
-
 
 
 
