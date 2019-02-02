@@ -31,7 +31,14 @@
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
+
+			<!-- if using full page image on home option -->
+			<?php if( get_field('full_page_image', 'option') ): ?>    
 			<div class="navigation-top">
+			<?php else: ?>
+			<div class="navigation-top nav-no-home-image">
+			<?php endif; ?>
+
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->

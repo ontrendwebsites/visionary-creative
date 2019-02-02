@@ -313,11 +313,15 @@ html body {
 // home profile
 .home-profile {
     position: absolute;
-    left: -300px;
+    left: -270px;
     top: -19px;
     max-width: 300px;
     text-align: center;
     transition: all .2s ease-out;
+
+    img {
+        max-width: 270px;
+    }
 
     h5,
     p {
@@ -433,9 +437,9 @@ html body {
 // folio image keyline
 .folio-post {
 
-    img {
-        margin-bottom: 32px;
-        padding-bottom: 32px;
+    hr {
+        margin: 16px 0;
+        padding: 16px 0;
         border-bottom: 1px solid rgba(0,0,0,0.2);
     }
 }
@@ -551,14 +555,34 @@ body {
 
 // Responsive
 
+// home folio spacing
+@media all and (min-width: 450px) and (max-width: 768px) {
+    .home #content .container  {
+        padding: 0 1em;
+        
+        .masonry {
+            text-align: center
+        }
+    }
+}
+
+// nav heaight
+@media all and (max-width: 768px) { 
+    .navigation-top .menu-main-container .menu li a {
+        padding: 15px;
+    }
+}
+
 // no display of top nav icon links
 .navigation-top.made-it #site-navigation .menu-main-container #top-menu li.has-icon {
     display: none;
 }
 
 // no display of mobile nav
-.mobile-nav {
-    display: none;
+@media all and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
 }
 
 // Home page layout
@@ -590,7 +614,8 @@ body {
         border-bottom: 1px solid $main-green!important;
     }
 
-    .navigation-top.made-it {
+    .navigation-top.made-it,
+    .navigation-top.nav-no-home-image {
         bottom: auto;
         position: fixed;
         left: 0;
@@ -699,13 +724,17 @@ body {
 
             a.fa {
                 font-size: 20px;
-                margin-left: 10%;
+                margin-left: 15%;
                 display: inline-block;
                 padding: 5px;
 
                 &:hover {
                     color: $main-green;
                 }
+            }
+
+            a.fa-phone {
+                margin-left: 25%;
             }
         }
 
@@ -772,7 +801,7 @@ body {
     }
 
     .site-content-contain #content {
-        padding-top: 1em;
+        padding-top: 3em;
     }
 
     .single-featured-image-header {
@@ -803,11 +832,11 @@ body {
             .menu-toggle {
                 text-align: right;
                 position: relative;
-                left: 40px;
+                left: 10px;
             }
 
             .address {
-                left: 13px;
+                left: 5px;
             }
         } 
     }
