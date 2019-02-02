@@ -52,6 +52,10 @@
 				$image = get_sub_field('image');
 				?>
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+					<!-- add hr if optin chosen  -->
+					<?php if( get_sub_field('line') ): ?>    
+					<hr />
+					<?php endif; ?>
 
 			<?php endwhile; ?>
 
