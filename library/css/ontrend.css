@@ -208,7 +208,8 @@ html body {
   text-align: center;
   transition: all .2s ease-out; }
   .home-profile img {
-    max-width: 270px; }
+    max-width: 270px;
+    width: 100%; }
   .home-profile h5,
   .home-profile p {
     color: #000000;
